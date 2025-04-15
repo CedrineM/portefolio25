@@ -1,0 +1,57 @@
+:root {
+  /* Couleurs de base */
+  --color-background: #fff;
+
+  /* Échelle de gris */
+  /* Backgrounds */
+  --gray-1: #fffdf9;
+  --gray-2: #fcf9f4;
+  /* Interactive components */
+  --gray-3: #f4f0e8;
+  --gray-4: #efe8dc;
+  --gray-5: #e8e0d3;
+  /* Borders and separators */
+  --gray-6: #e2d8c7;
+  --gray-7: #dacdb8;
+  --gray-8: #cab99d;
+  /* Solid colors */
+  --gray-9: #9e8969;
+  --gray-10: #927f61;
+  /* Accessible text */
+  --gray-11: #6f6049;
+  --gray-12: #2a1e07;
+
+  /* Échelle de lime */
+  /* Backgrounds */
+  --lime-1: #fcfdfa;
+  --lime-2: #f7faf3;
+  /* Interactive components */
+  --lime-3: #eaf7d8;
+  --lime-4: #ddf1bf;
+  --lime-5: #cfe8a8;
+  /* Borders and separators */
+  --lime-6: #bfdb92;
+  --lime-7: #abc978;
+  --lime-8: #92b44f;
+  /* Solid colors */
+  --lime-9: #c0ed69;
+  --lime-10: #b6e35e;
+  /* Accessible text */
+  --lime-11: #607b2a;
+  --lime-12: #34411e;
+
+  /* Variables sémantiques pour l'interface */
+  --text-primary: var(--gray-12);
+  --text-secondary: var(--gray-11);
+  --text-tertiary: var(--gray-10);
+
+  --background-primary: var(--color-lime-1);
+  --background-secondary: var(--lime-2);
+
+  --accent-primary: var(--lime-9);
+  --accent-secondary: var(--lime-10);
+  --accent-hover: var(--lime-4);
+
+  --border-color: var(--lime-7);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
