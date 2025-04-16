@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { HiArrowRight } from "react-icons/hi";
 import CV from "../../assets/CV_Cédrine_MILESI.pdf";
+
 import "./Experience.css";
 
 const timelineData = [
