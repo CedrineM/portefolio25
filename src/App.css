@@ -108,3 +108,14 @@
     rotate: 360deg;
   }
 }
+@media screen and (max-width: 900px) {
+  .app__container {
+    flex-direction: column;
+  }
+
+  .main__home {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}

@@ -102,3 +102,18 @@
 .header__social-link:hover {
   color: var(--accent-primary);
 }
+
+@media screen and (max-width: 900px) {
+  .header {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+  }
+
+  .header__nav {
+    display: none;
+  }
+}
