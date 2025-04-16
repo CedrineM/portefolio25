@@ -109,6 +109,10 @@
   }
 }
 @media screen and (max-width: 900px) {
+  .app {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .app__container {
     flex-direction: column;
   }
