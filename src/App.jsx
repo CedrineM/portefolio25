@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
           <main className="main">
             <About />
             <Experience />
+            <Projects />
           </main>
         </div>
 

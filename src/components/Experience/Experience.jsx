@@ -107,6 +107,10 @@ const Experience = () => {
 
   return (
     <section id="experience" className="experience">
+      <div className="experience__header">
+        <span className="experience__number">02.</span>
+        <h2 className="experience__title">Expériences et Formations</h2>
+      </div>
       <div className={`timeline ${isVisible ? "visible" : ""}`}>
         <div className="timeline__line"></div>
         {timelineData.map((item) => (

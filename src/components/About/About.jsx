@@ -3,17 +3,21 @@ import "./About.css";
 const About = () => {
   return (
     <section id="about" className="about">
+      <div className="about__header">
+        <span className="about__number">01.</span>
+        <h2 className="about__title">À Propos</h2>
+      </div>
       <div className="about__content">
         <p>
-          Développeuse en reconversion, j’ai découvert dans le code un espace où
+          Développeuse en reconversion, j'ai découvert dans le code un espace où
           je peux exprimer ma créativité autant que ma logique. Après une
-          formation intensive en Conception et Développement d’Applications, je
-          cherche aujourd’hui une alternance qui me permettra de continuer à
+          formation intensive en Conception et Développement d'Applications, je
+          cherche aujourd'hui une alternance qui me permettra de continuer à
           progresser tout en contribuant à des projets concrets.
         </p>
         <p>
-          Curieuse et investie, j’aime comprendre ce que je fais en profondeur
-          et apprendre de nouvelles technos dès que j’en ai l’occasion. J’ai un
+          Curieuse et investie, j'aime comprendre ce que je fais en profondeur
+          et apprendre de nouvelles technos dès que j'en ai l'occasion. J'ai un
           vrai plaisir à travailler en équipe, à trouver des solutions ensemble
           et à partager les avancées.
         </p>

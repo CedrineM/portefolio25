@@ -9,3 +9,21 @@
   flex-direction: column;
   gap: 1rem;
 }
+
+.about__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.about__number {
+  color: var(--accent-primary);
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+}
+
+.about__title {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
