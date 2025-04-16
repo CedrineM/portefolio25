@@ -12,8 +12,10 @@ Ce projet est également une opportunité d'apprentissage, notamment à travers 
 
 - [React](https://reactjs.org/) - Bibliothèque JavaScript pour la construction d'interfaces
 - [Vite](https://vitejs.dev/) - Outil de build ultra-rapide pour le développement moderne
+- [React Router](https://reactrouter.com/) - Pour la navigation entre les pages
 - [CSS](https://developer.mozilla.org/fr/docs/Web/CSS) - Styles et animations personnalisés
 - [React Icons](https://react-icons.github.io/react-icons/) - Pour les icônes élégantes
+- [Axios](https://axios-http.com/) - Pour les requêtes HTTP vers l'API GitHub
 
 ### Environnement de développement
 
@@ -28,23 +30,10 @@ Ce projet est également une opportunité d'apprentissage, notamment à travers 
 - ✅ Effet de halo lumineux suivant le curseur
 - ✅ Interface responsive
 - ✅ Sections organisées (À propos, Expériences, Projets)
+- ✅ Intégration avec l'API GitHub pour afficher les projets
+- ✅ Page Archive avec tous les projets
 - ✅ Liens vers les réseaux sociaux professionnels
-
-## 📦 Installation
-
-```bash
-# Cloner le repository
-git clone https://github.com/CedrineM/portfolio.git
-
-# Accéder au dossier
-cd portfolio
-
-# Installer les dépendances
-yarn install
-
-# Lancer le serveur de développement
-yarn dev
-```
+- ✅ Téléchargement du CV et du dossier de projet
 
 ## 🎯 Structure du projet
 
@@ -52,9 +41,15 @@ yarn dev
 portfolio/
 ├── src/
 │   ├── components/     # Composants React réutilisables
+│   │   ├── About/     # Section À propos
+│   │   ├── Archive/   # Page des projets archivés
+│   │   ├── Experience/# Section Expérience
+│   │   ├── Header/    # Navigation principale
+│   │   ├── Home/      # Page d'accueil
+│   │   └── Projects/  # Section Projets
 │   ├── styles/        # Fichiers CSS et variables
-│   ├── assets/        # Images et ressources statiques
-│   └── App.jsx        # Composant principal
+│   ├── assets/        # Images, PDF et ressources statiques
+│   └── App.jsx        # Composant principal et routage
 ├── public/            # Fichiers statiques
 └── index.html         # Point d'entrée HTML
 ```
@@ -62,15 +57,11 @@ portfolio/
 ## 🔧 Fonctionnalités à venir
 
 - [ ] Mode sombre/clair
-- [ ] Animations de défilement
-- [ ] Galerie de projets interactive
-- [ ] Optimisation des performances
 
 ## ✍️ Auteur
 
 [@CedrineM](https://github.com/CedrineM)
 
-## 💐 Remerciements
+## 💐 Autre
 
 - Inspiré par le design de [Brittany Chiang](https://brittanychiang.com/)
-- Merci à la communauté React pour leurs ressources et leur support

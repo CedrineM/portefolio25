@@ -45,8 +45,11 @@ const timelineData = [
     date: "Septembre - Novembre 2024",
     title: "Stage Webdesigner",
     location: "Bien dans ta com",
-    description:
-      "Refonte du logo et du site de la mairie de Cléry (www.clery.fr). Création d'un visuel de papier cadeau pour Noël. Initiation au SEO.",
+    description: `Refonte du logo et du site de la mairie de Cléry 
+      <a className="experience__description-link" href="https://www.clery.fr" target="_blank" rel="noopener noreferrer">
+        (www.clery.fr)
+      </a>
+     . Création d'un visuel de papier cadeau pour Noël. Initiation au SEO.`,
     skills: ["Web Design", "SEO", "Logo Design", "UI/UX"],
   },
   {
@@ -72,6 +75,11 @@ const timelineData = [
   },
   // Ajoutez vos autres expériences et formations ici
 ];
+
+// Fonction pour rendre le HTML en toute sécurité
+const createMarkup = (htmlContent) => {
+  return { __html: htmlContent };
+};
 
 const Experience = () => {
   const observerRef = useRef(null);
@@ -131,7 +139,10 @@ const Experience = () => {
                 )}
               </h3>
               <div className="timeline-item__location">{item.location}</div>
-              <p className="timeline-item__description">{item.description}</p>
+              <p
+                className="timeline-item__description"
+                dangerouslySetInnerHTML={createMarkup(item.description)}
+              />
               <div className="timeline-item__skills">
                 {item.skills.map((skill, index) => (
                   <span key={index} className="timeline-item__skill">

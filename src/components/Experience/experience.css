@@ -36,11 +36,7 @@
   left: 54px;
   width: 3px;
   height: 0;
-  background: linear-gradient(
-    to bottom,
-    var(--accent-primary),
-    var(--accent-secondary)
-  );
+  background: linear-gradient(to bottom, var(--lime-9), var(--lime-10));
   transition: height 2s ease-out;
   top: 0;
   bottom: 0;
@@ -74,7 +70,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: var(--accent-primary);
+  background: var(--lime-8);
   border: 2px solid var(--background-primary);
   left: -44px;
   top: 50%;
@@ -122,7 +118,7 @@
 }
 
 .timeline-item--formation .timeline-item__marker {
-  background: var(--accent-secondary);
+  background: var(--accent-primary);
 }
 
 .timeline.visible .timeline__line {
@@ -180,4 +176,15 @@
 
 .cv-link:hover .cv-link__arrow {
   transform: translateX(5px);
+}
+
+.experience__description-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.experience__description-link:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
 }

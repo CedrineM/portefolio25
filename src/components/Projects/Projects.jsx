@@ -5,6 +5,7 @@ import "./Projects.css";
 import marvel from "../../assets/img/MarvelComics.png";
 import giftsquad from "../../assets/img/GiftSquad.png";
 import airbnb from "../../assets/img/Airbnb.png";
+import sellelegance from "../../assets/img/Sellelegance.png";
 
 const projectsData = [
   {
@@ -39,7 +40,7 @@ const projectsData = [
   {
     id: 3,
     title: "Réplique mobile d'Airbnb",
-    featured: false,
+    featured: true,
     description:
       "Reproduction de l'interface mobile d'Airbnb, incluant la navigation entre écrans, l'affichage dynamique des offres, les détails de logement et une mise en page responsive. Un exercice personnel pour approfondir mes compétences en développement mobile avec React Native.",
     image: airbnb,
@@ -48,6 +49,17 @@ const projectsData = [
       frontend: "https://github.com/votre-username/airbnb-replique",
     },
     isMobile: true,
+  },
+  {
+    id: 4,
+    title: "Sell'Élégance",
+    featured: false,
+    description:
+      "Site vitrine e-commerce pour une entreprise artisanale de fabrication de selles sur mesure. Projet de fin de formation en Conception UI/UX comprenant l'identité visuelle complète (charte, couleurs, typographie), la maquette Figma et l'intégration web responsive avec animations. L'objectif était de créer une vitrine digitale élégante mettant en valeur le savoir-faire artisanal.",
+    image: sellelegance,
+    technologies: ["HTML/CSS", "Figma", "UI/UX Design", "Responsive Design"],
+    liveLink: "https://sellelegance.fr/",
+    isMobile: false,
   },
 ];
 
