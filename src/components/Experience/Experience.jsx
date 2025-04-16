@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import { HiArrowRight } from "react-icons/hi";
+import CV from "../../assets/CV_Cédrine_MILESI.pdf";
 import "./Experience.css";
 
 const timelineData = [
@@ -137,6 +139,17 @@ const Experience = () => {
           </div>
         ))}
       </div>
+      <a
+        href={CV}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="cv-link"
+      >
+        <span className="cv-link__text">Télécharger mon CV</span>
+        <span className="cv-link__arrow">
+          <HiArrowRight size={20} />
+        </span>
+      </a>
     </section>
   );
 };

@@ -3,3 +3,9 @@
   scroll-margin-top: 6rem;
   margin-bottom: 9rem;
 }
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

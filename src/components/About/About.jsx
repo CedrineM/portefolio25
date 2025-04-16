@@ -9,13 +9,18 @@ const About = () => {
           je peux exprimer ma créativité autant que ma logique. Après une
           formation intensive en Conception et Développement d’Applications, je
           cherche aujourd’hui une alternance qui me permettra de continuer à
-          progresser tout en contribuant à des projets concrets. Curieuse et
-          investie, j’aime comprendre ce que je fais en profondeur et apprendre
-          de nouvelles technos dès que j’en ai l’occasion. J’ai un vrai plaisir
-          à travailler en équipe, à trouver des solutions ensemble et à partager
-          les avancées. En dehors du dev, je suis passionnée par les jeux vidéo,
-          le dessin et la peinture sur figurine. Ces loisirs nourrissent mon
-          sens du détail, ma créativité… et ma patience
+          progresser tout en contribuant à des projets concrets.
+        </p>
+        <p>
+          Curieuse et investie, j’aime comprendre ce que je fais en profondeur
+          et apprendre de nouvelles technos dès que j’en ai l’occasion. J’ai un
+          vrai plaisir à travailler en équipe, à trouver des solutions ensemble
+          et à partager les avancées.
+        </p>
+        <p>
+          En dehors du dev, je suis passionnée par les jeux vidéo, le dessin et
+          la peinture sur figurine. Ces loisirs nourrissent mon sens du détail,
+          ma créativité… et ma patience
         </p>
       </div>
     </section>

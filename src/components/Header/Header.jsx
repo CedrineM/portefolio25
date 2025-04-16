@@ -94,7 +94,7 @@ const Header = () => {
 
       <div className="header__social">
         <a
-          href="https://github.com/votre-username"
+          href="https://github.com/CedrineM"
           target="_blank"
           rel="noopener noreferrer"
           className="header__social-link"
@@ -102,7 +102,7 @@ const Header = () => {
           <FaGithub />
         </a>
         <a
-          href="https://linkedin.com/in/votre-username"
+          href="https://www.linkedin.com/in/cedrine-milesi/"
           target="_blank"
           rel="noopener noreferrer"
           className="header__social-link"
