@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { HiArrowRight } from "react-icons/hi";
 import "./Projects.css";
 import marvel from "../../assets/img/MarvelComics.png";
 import giftsquad from "../../assets/img/GiftSquad.png";
@@ -126,6 +127,17 @@ const Projects = () => {
             </div>
           </article>
         ))}
+      </div>
+
+      <div className="projects__footer">
+        <a href="/archive" className="projects__archive-link">
+          <span className="projects__archive-link__text">
+            Voir tous les projets
+          </span>
+          <span className="projects__archive-link__arrow">
+            <HiArrowRight size={20} />
+          </span>
+        </a>
       </div>
     </section>
   );

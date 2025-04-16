@@ -53,8 +53,14 @@
   margin: 0 auto;
 }
 
-.main {
+.main__home {
   width: 60%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.main__archive {
+  width: 100%;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }

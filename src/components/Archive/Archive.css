@@ -1,0 +1,121 @@
+.archive {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.archive__header {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.archive-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  width: fit-content;
+}
+
+.archive-link:hover {
+  color: var(--accent-primary);
+}
+
+.archive-link:hover .archive-link__arrow {
+  transform: translateX(-5px);
+}
+
+.archive-link__arrow {
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.archive__title {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+}
+
+.archive__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+}
+
+.archive__table th {
+  padding: 1rem;
+  text-align: left;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  border-bottom: 2px solid var(--accent-primary);
+}
+
+.archive__table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--background-secondary);
+  color: var(--text-secondary);
+}
+
+.archive__table tr:hover {
+  background-color: var(--background-secondary);
+}
+
+.archive__year {
+  font-family: var(--font-mono);
+  color: var(--accent-primary);
+  white-space: nowrap;
+}
+
+.archive__title-cell {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.archive__made-at {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.archive__built-with {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.archive__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.archive__link {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.archive__link:hover {
+  color: var(--accent-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .archive {
+    padding: 1rem;
+  }
+
+  .archive__table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .archive__built-with {
+    max-width: 200px;
+    white-space: normal;
+  }
+}
