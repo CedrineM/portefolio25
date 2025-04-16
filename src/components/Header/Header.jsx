@@ -5,26 +5,42 @@ import "./Header.css";
 const Header = () => {
   const [activeSection, setActiveSection] = useState("about");
 
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "-50% 0px",
-      threshold: 0,
-    };
+  const handleClick = (e, sectionId) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section[id]");
+      let currentSection = "about";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        const scrollY = window.scrollY;
+
+        if (
+          scrollY >= sectionTop - 100 &&
+          scrollY < sectionTop + sectionHeight - 100
+        ) {
+          currentSection = section.getAttribute("id");
         }
       });
-    }, options);
 
-    // Observer chaque section
-    const sections = document.querySelectorAll("section[id]");
-    sections.forEach((section) => observer.observe(section));
+      setActiveSection(currentSection);
+    };
 
-    return () => observer.disconnect();
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Appel initial pour définir la section active
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -42,6 +58,7 @@ const Header = () => {
             <li>
               <a
                 href="#about"
+                onClick={(e) => handleClick(e, "about")}
                 className={`header__nav-link ${
                   activeSection === "about" ? "active" : ""
                 }`}
@@ -52,6 +69,7 @@ const Header = () => {
             <li>
               <a
                 href="#experience"
+                onClick={(e) => handleClick(e, "experience")}
                 className={`header__nav-link ${
                   activeSection === "experience" ? "active" : ""
                 }`}
@@ -62,6 +80,7 @@ const Header = () => {
             <li>
               <a
                 href="#projects"
+                onClick={(e) => handleClick(e, "projects")}
                 className={`header__nav-link ${
                   activeSection === "projects" ? "active" : ""
                 }`}

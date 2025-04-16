@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Experience.css";
 
 const timelineData = [
@@ -73,6 +73,7 @@ const timelineData = [
 
 const Experience = () => {
   const observerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const options = {
@@ -85,6 +86,7 @@ const Experience = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("timeline-item--visible");
+          setIsVisible(true);
         }
       });
     };
@@ -103,8 +105,7 @@ const Experience = () => {
 
   return (
     <section id="experience" className="experience">
-      <h2 className="experience__title">Expériences et Formations</h2>
-      <div className="timeline">
+      <div className={`timeline ${isVisible ? "visible" : ""}`}>
         <div className="timeline__line"></div>
         {timelineData.map((item) => (
           <div

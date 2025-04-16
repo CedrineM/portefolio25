@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .logo {
@@ -42,17 +41,22 @@
 
 .app {
   min-height: 100vh;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .app__container {
   width: 100%;
   display: flex;
+  gap: 1rem;
   max-width: 1280px;
   margin: 0 auto;
 }
 
 .main {
-  padding-top: 80px; /* Pour compenser le header fixe */
+  width: 60%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .blob {

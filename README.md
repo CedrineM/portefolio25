@@ -12,7 +12,7 @@ Ce projet est également une opportunité d'apprentissage, notamment à travers 
 
 - [React](https://reactjs.org/) - Bibliothèque JavaScript pour la construction d'interfaces
 - [Vite](https://vitejs.dev/) - Outil de build ultra-rapide pour le développement moderne
-- [CSS Modules](https://github.com/css-modules/css-modules) - Pour un style modulaire et maintenable
+- [CSS](https://developer.mozilla.org/fr/docs/Web/CSS) - Styles et animations personnalisés
 - [React Icons](https://react-icons.github.io/react-icons/) - Pour les icônes élégantes
 
 ### Environnement de développement

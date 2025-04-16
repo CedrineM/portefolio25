@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 // import components
 import Header from "./components/Header/Header";
-
+import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 
 function App() {
@@ -38,6 +38,7 @@ function App() {
         <div className="app__container">
           <Header />
           <main className="main">
+            <About />
             <Experience />
           </main>
         </div>
