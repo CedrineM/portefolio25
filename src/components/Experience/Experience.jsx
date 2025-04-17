@@ -74,6 +74,22 @@ const timelineData = [
       "After Effects",
     ],
   },
+  {
+    id: 5,
+    type: "experience",
+    date: "2017–2024",
+    title:
+      "École Pratique des Hautes Études – Master Biologie Santé Écologie (Spécialité : Signalisation et Systèmes Intégrés en Biologie)",
+    description:
+      "Après mon master, j’ai travaillé 5 ans dans la recherche scientifique : 1 an au Centre International de Recherche sur le Cancer, 3 ans en virologie (virus respiratoires), puis 1 an comme ingénieure de production, où j’ai participé au développement et à la gestion de la production de capteurs pour le système SecretCells.",
+    skills: [
+      "Travail d’équipe",
+      "Organisation",
+      "Logique",
+      "Recherche scientifique",
+      "Virologie",
+    ],
+  },
   // Ajoutez vos autres expériences et formations ici
 ];
 

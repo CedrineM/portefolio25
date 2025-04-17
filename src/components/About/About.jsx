@@ -16,6 +16,12 @@ const About = () => {
           progresser tout en contribuant à des projets concrets.
         </p>
         <p>
+          Avant cette reconversion, j’ai obtenu un master en biologie et
+          travaillé pendant 5 ans dans la recherche scientifique. Cette
+          expérience m’a appris la rigueur, l’analyse et le travail d’équipe —
+          des qualités que j’applique aujourd’hui dans le développement web.
+        </p>
+        <p>
           Curieuse et investie, j'aime comprendre ce que je fais en profondeur
           et apprendre de nouvelles technos dès que j'en ai l'occasion. J'ai un
           vrai plaisir à travailler en équipe, à trouver des solutions ensemble
@@ -24,7 +30,7 @@ const About = () => {
         <p>
           En dehors du dev, je suis passionnée par les jeux vidéo, le dessin et
           la peinture sur figurine. Ces loisirs nourrissent mon sens du détail,
-          ma créativité… et ma patience
+          ma créativité… et ma patience.
         </p>
       </div>
     </section>
